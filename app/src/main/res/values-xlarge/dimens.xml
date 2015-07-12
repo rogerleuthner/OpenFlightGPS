@@ -1,0 +1,26 @@
+
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<resources>
+	<dimen name="font_size_small">25dp</dimen>
+	<dimen name="font_size_big">35dp</dimen>
+	<dimen name="font_size_medium">30dp</dimen>		
+	<dimen name="font_size_title">40dip</dimen>
+</resources>
+
+

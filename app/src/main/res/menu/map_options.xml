@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/course_menu" android:title="Courses/Waypoints" android:icon="@android:drawable/ic_menu_preferences">
+		<menu>
+	         <item android:id="@+id/course_save"
+	               android:title="Save Course" />
+	         <item android:id="@+id/course_saveas"
+	               android:title="Save Course As" />	               
+	         <item android:id="@+id/course_load"
+	               android:title="Open Course" />
+	         <item android:id="@+id/course_clear"
+	               android:title="Clear Course" />
+	         <item android:id="@+id/course_delete"
+	               android:title="Delete Course" />	               
+		</menu>
+	</item>
+	<item android:id="@+id/find_me" android:title="My Location" android:icon="@android:drawable/ic_menu_mylocation" />	
+	<item android:id="@+id/reset_view" android:title="Reset View" android:icon="@android:drawable/ic_menu_mapmode" />
+	<item android:id="@+id/force_download" android:title="Force Map Download" android:icon="@android:drawable/ic_menu_upload" />
+	<item android:id="@+id/delete_map" android:title="Delete Map" android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+	<item android:id="@+id/preferences_menu" android:title="Preferences" android:icon="@android:drawable/ic_menu_preferences"  />
+</menu>

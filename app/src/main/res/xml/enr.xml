@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<map xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Roger   -->
+<area shape="poly" coords="44,145,44,161,75,162,75,146" href="L07" />
+<area shape="poly" coords="24,169,65,184,72,167,27,159" href="L04" />
+<area shape="poly" coords="21,69,14,109,33,112,39,72" href="L02" />
+<area shape="poly" coords="19,116,23,148,44,142,40,114" href="L03" />
+<area shape="poly" coords="25,61,43,66,58,12,41,7" href="L01" />
+<area shape="poly" coords="76,170,70,191,120,204,125,182" href="L05" />
+<area shape="poly" coords="85,150,86,169,148,169,147,150" href="L08" />
+<area shape="poly" coords="61,18,53,57,168,79,176,40" href="L13" />
+<area shape="poly" coords="49,68,44,92,144,111,149,85" href="L11" />
+<area shape="poly" coords="47,105,49,138,146,139,148,115" href="L09" />
+<area shape="poly" coords="169,212,169,233,239,233,239,212" href="L19" />
+<area shape="poly" coords="175,240,175,263,239,263,239,240" href="L20" />
+<area shape="poly" coords="185,181,185,201,248,201,248,181" href="L17" />
+<area shape="poly" coords="157,151,157,171,228,170,228,151" href="L15" />
+<area shape="poly" coords="156,120,156,143,232,143,232,119" href="L10" />
+<area shape="poly" coords="170,82,167,109,242,108,242,82" href="L12" />
+<area shape="poly" coords="183,41,183,72,271,71,271,42" href="L14" />
+<area shape="poly" coords="250,212,250,232,328,232,328,212" href="L22" />
+<area shape="poly" coords="258,181,258,201,328,201,328,181" href="L18" />
+<area shape="poly" coords="238,150,238,170,300,170,300,150" href="L16" />
+<area shape="poly" coords="243,119,243,139,309,139,309,118" href="L27" />
+<area shape="poly" coords="254,87,254,111,315,111,315,87" href="L28" />
+<area shape="poly" coords="283,52,282,77,355,85,358,63" href="L31" />
+<area shape="poly" coords="375,89,381,103,415,88,408,74" href="L33" />
+<area shape="poly" coords="357,55,369,86,451,49,437,19" href="L32" />
+<area shape="poly" coords="365,122,382,131,393,108,375,103" href="L34" />
+<area shape="poly" coords="325,92,325,106,368,106,368,92" href="L30" />
+<area shape="poly" coords="322,115,322,131,362,131,361,115" href="L29" />
+<area shape="poly" coords="312,136,312,152,351,152,351,136" href="L26" />
+<area shape="poly" coords="364,164,373,174,396,149,385,139" href="L35" />
+<area shape="poly" coords="349,158,361,164,378,136,364,131" href="L36" />
+<area shape="poly" coords="308,156,308,172,343,172,343,156" href="L25" />
+<area shape="poly" coords="335,178,335,240,362,240,362,178" href="L24" />
+<area shape="poly" coords="339,247,339,272,400,272,400,247" href="L23" />
+<area shape="poly" coords="129,178,129,203,176,203,176,178" href="L06N" />
+<area shape="poly" coords="134,209,134,236,161,236,160,209" href="L06S" />
+</map>
+

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/waypointScrollView" 
+		android:layout_width="fill_parent" 
+		android:layout_height="match_parent" 
+		android:background="#fff">
+
+	<!-- set the layout id/focusable stuff so can open the act without having focus in a field -->
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/waypointView"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"		
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1">	
+	    		
+	    		<!--  padding right so that the boxes don't get truncated on small screens -->
+		<TableRow android:background="#008080">
+			<TextView android:text="Waypoint:"
+		  		android:textSize="@dimen/font_size_title"
+		  		android:gravity="left"
+				android:paddingTop="3dip"
+				android:paddingBottom="3dip"
+				android:paddingLeft="5dip"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				android:shadowDx="1.4"
+				android:shadowDy="1.4"
+				android:shadowRadius="1.4"
+				android:shadowColor="#000000" />
+		  	<EditText android:id="@+id/waypointName"
+		  		android:textSize="@dimen/font_size_big"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:textColor="#000000"
+				android:singleLine="true" 	
+				android:selectAllOnFocus="true"/>					
+		</TableRow>		    		
+	
+		<TableRow android:background="#ffffff">  
+		  	<TextView android:text="  Description/Note"
+		  		android:textSize="@dimen/font_size_medium"
+				android:textColor="#008080"
+				android:layout_span="2" 
+				android:gravity="left"/>				
+		</TableRow>			
+		<TableRow android:background="#ffffff">  
+		  	<EditText android:id="@+id/waypointDesc"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:textColor="#000000"
+				android:layout_span="2"
+				android:inputType="textMultiLine"
+				android:lines="3"
+				android:paddingRight="5dip"
+				android:paddingLeft="10dip"
+				android:paddingTop="2dip"
+				android:paddingBottom="2dip"
+				android:selectAllOnFocus="true"/>		
+		</TableRow>		
+				
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="My dist to (nm): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/positionDistTo"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>			
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="My brng to (true): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/positionBearingTo"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>					
+		
+		<TableRow android:background="#ffffff">  
+		  	<TextView android:text="Lat / Lon: "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/latLon"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>		
+		
+		
+		<TableRow android:background="#ffffff">  
+		  	<TextView android:text="Part of Course: "
+		  		android:textSize="@dimen/font_size_medium"
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/waypointCourseName"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>	
+		
+		<TableRow android:background="#ffffff">  
+		  	<TextView android:text="Course Total (nm): "
+		  		android:textSize="@dimen/font_size_medium"
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/courseTotal"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>					
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Next Waypoint: "
+		  		android:textSize="@dimen/font_size_big"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				android:shadowDx="1.4"
+				android:shadowDy="1.4"
+				android:shadowRadius="1.4"
+				android:shadowColor="#000000"						
+				android:layout_span="1"/>	
+		  	<TextView android:id="@+id/nextWaypoint"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="(course end)"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>								
+		</TableRow>			
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Dist wpt-wpt (nm): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/nmToNext"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>		
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Brng wpt-wpt (true): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/bearingToNext"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>	
+				
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="My dist to (nm): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/distFromCurrent"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>			
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="My brng to (true): "
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/bearingFromCurrent"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text=""
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>		
+		
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/TextView02" 
+				android:padding="3dip" 
+				android:text="If bearings and distances from current are blank, a current GPS location was not found or it is the final course waypoint.  Title/description may be edited and changes will be saved at 'backbutton'."
+				android:textSize="@dimen/font_size_small"
+				android:layout_span="2"
+				android:textColor="#008080"		
+				/>
+		</TableRow>
+				
+<!-- 				
+		<TableRow>
+			<Button 
+				android:text="Save Changes" 
+				android:id="@+id/saveButton" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_gravity="center"
+				android:onClick="saveListener"></Button>
+		</TableRow>
+ -->
+		
+	</TableLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/ofmanim"
+	android:oneshot="true"
+	>
+	<item android:drawable="@drawable/f1" android:duration="50" />
+	<item android:drawable="@drawable/f2" android:duration="50" />
+    <item android:drawable="@drawable/f3" android:duration="50" />
+    <item android:drawable="@drawable/f4" android:duration="50" />
+    <item android:drawable="@drawable/f5" android:duration="50" />
+    <item android:drawable="@drawable/f6" android:duration="50" />
+    <item android:drawable="@drawable/f7" android:duration="50" />
+    <item android:drawable="@drawable/f8" android:duration="50" />
+    <item android:drawable="@drawable/f9" android:duration="50" />
+    <item android:drawable="@drawable/f10" android:duration="50" />	
+	<item android:drawable="@drawable/f11" android:duration="50" />	
+	<item android:drawable="@drawable/f12" android:duration="50" />	
+	<item android:drawable="@drawable/f13" android:duration="50" />
+	<item android:drawable="@drawable/f14" android:duration="50" />
+	<item android:drawable="@drawable/f15" android:duration="50" />
+    <item android:drawable="@drawable/f16" android:duration="50" />
+    <item android:drawable="@drawable/f17" android:duration="50" />
+    <item android:drawable="@drawable/f18" android:duration="50" />
+    <item android:drawable="@drawable/f19" android:duration="50" />
+    <item android:drawable="@drawable/f20" android:duration="50" />
+    <item android:drawable="@drawable/f21" android:duration="50" />
+    <item android:drawable="@drawable/f22" android:duration="50" />
+	<item android:drawable="@drawable/f23" android:duration="50" />
+	<item android:drawable="@drawable/f1" android:duration="50" />
+
+	<!-- 
+	<item android:drawable="@drawable/f24" android:duration="50" />
+	<item android:drawable="@drawable/f25" android:duration="50" />
+	<item android:drawable="@drawable/f26" android:duration="50" />
+	<item android:drawable="@drawable/f27" android:duration="50" />
+	<item android:drawable="@drawable/f28" android:duration="50" />
+	<item android:drawable="@drawable/f29" android:duration="50" />
+	<item android:drawable="@drawable/f30" android:duration="50" />
+	<item android:drawable="@drawable/f31" android:duration="50" />
+	<item android:drawable="@drawable/f32" android:duration="50" />
+	<item android:drawable="@drawable/f33" android:duration="50" />
+	<item android:drawable="@drawable/f34" android:duration="50" />
+	<item android:drawable="@drawable/f35" android:duration="50" />
+	<item android:drawable="@drawable/f36" android:duration="50" />
+	<item android:drawable="@drawable/f37" android:duration="50" />
+	<item android:drawable="@drawable/f38" android:duration="50" />
+	<item android:drawable="@drawable/f39" android:duration="50" />
+	<item android:drawable="@drawable/f40" android:duration="50" />
+
+	-->
+</animation-list>

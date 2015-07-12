@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1"
+	    android:background="#fff">	
+	    		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Course:"
+		  		android:textSize="@dimen/font_size_medium"
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/courseName"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>	
+		
+		<TableRow >  
+		  	<TextView android:text="Total Length:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/splashAvailable"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>			
+		
+		<TableRow >  
+		  	<TextView android:text="Maps Used:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/splashUsed"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>			
+		
+		<TableRow >  
+		  	<TextView android:text="Installed:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/splashInstalled"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>			
+		
+		<TableRow >  
+		  	<TextView android:text="Expires:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/splashExpires"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>						
+		</TableRow>			
+
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Software Revision:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+		  	<TextView android:id="@+id/splashRevision"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="left"
+		  		android:text="XX"
+				android:padding="3dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>						
+		</TableRow>			
+
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/TextView02" 
+				android:padding="10dip" 
+				android:text="NOT an official product.  Consult an official product for all Aeronautical Decision Making!"
+				android:textSize="@dimen/font_size_small"
+				android:layout_span="2"
+				android:textColor="#f00"
+				android:height="50dip"			
+				/>
+		</TableRow>
+				
+		<TableRow>	  
+			<ImageView 
+				android:id="@+id/SplashImageView"
+				android:layout_gravity="bottom"
+				android:layout_span="2"
+				android:src="@drawable/f20"
+				>
+			</ImageView>
+		</TableRow>
+	  	<!-- 
+		Not animated
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/SplashImageView"
+			android:src="@drawable/lnxins"
+			android:layout_gravity="center"		
+			>
+		</ImageView>
+	-->  
+		
+	</TableLayout>
+

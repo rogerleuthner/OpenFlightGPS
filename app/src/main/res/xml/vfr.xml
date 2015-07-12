@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<map xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Roger  -->
+<area shape="poly" coords="36,139,29,170,76,179,82,150" href="Los_Angeles" />
+<area shape="poly" coords="85,155,80,186,120,191,123,161" href="Phoenix" />
+<area shape="poly" coords="132,159,130,187,174,190,175,162" href="Albuquerque" />
+<area shape="poly" coords="128,195,125,222,165,225,165,198" href="El_Paso" />
+<area shape="poly" coords="175,199,174,227,215,228,215,200" href="San_Antonio" />
+<area shape="poly" coords="172,236,171,263,215,265,216,238" href="Brownsville" />
+<area shape="poly" coords="225,201,226,228,261,226,260,200" href="Houston" />
+<area shape="poly" coords="185,164,185,189,228,190,227,165" href="Dallas-Ft_Worth" />
+<area shape="poly" coords="172,127,171,153,212,154,212,128" href="Wichita" />
+<area shape="poly" coords="124,122,121,151,161,154,162,125" href="Denver" />
+<area shape="poly" coords="75,114,68,141,108,149,113,121" href="Las_Vegas" />
+<area shape="poly" coords="38,61,29,90,73,102,80,72" href="Klamath_Falls" />
+<area shape="poly" coords="90,73,84,104,128,111,132,81" href="Salt_Lake" />
+<area shape="poly" coords="143,82,139,113,184,117,186,86" href="Cheyenne" />
+<area shape="poly" coords="196,87,195,117,240,117,239,87" href="Omaha" />
+<area shape="poly" coords="51,19,41,51,81,61,88,29" href="Seattle" />
+<area shape="poly" coords="99,31,93,63,133,70,137,38" href="Great_Falls" />
+<area shape="poly" coords="148,39,145,72,186,75,187,43" href="Billings" />
+<area shape="poly" coords="198,43,197,76,238,75,236,43" href="Twin_Cities" />
+<area shape="poly" coords="26,100,18,126,59,137,65,111" href="San_Francisco" />
+<area shape="poly" coords="248,50,249,80,292,77,288,46" href="Green_Bay" />
+<area shape="poly" coords="249,90,251,117,296,113,293,87" href="Chicago" />
+<area shape="poly" coords="223,128,223,154,257,153,255,127" href="Kansas_City" />
+<area shape="poly" coords="272,126,274,152,301,149,298,123" href="St_Louis" />
+<area shape="poly" coords="237,164,238,190,282,188,280,162" href="Memphis" />
+<area shape="poly" coords="269,200,271,226,310,222,307,196" href="New_Orleans" />
+<area shape="poly" coords="298,47,302,75,344,68,338,40" href="Lake_Huron" />
+<area shape="poly" coords="303,85,306,112,351,104,346,78" href="Detroit" />
+<area shape="poly" coords="314,121,318,147,345,143,340,117" href="Cincinnati" />
+<area shape="poly" coords="290,161,292,187,328,183,324,158" href="Atlanta" />
+<area shape="poly" coords="317,195,320,221,363,214,357,188" href="Jacksonville" />
+<area shape="poly" coords="337,229,341,255,384,248,379,222" href="Miami" />
+<area shape="poly" coords="342,155,346,180,381,173,375,147" href="Charlotte" />
+<area shape="poly" coords="357,115,362,139,395,131,388,106" href="Washington" />
+<area shape="poly" coords="356,76,362,102,406,91,398,65" href="New_York" />
+<area shape="poly" coords="348,38,354,66,395,55,387,28" href="Montreal" />
+<area shape="poly" coords="397,25,405,53,446,39,435,12" href="Halifax" />
+</map>
+

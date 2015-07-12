@@ -1,0 +1,1 @@
+image maps saved as 320x480, 80%, corresponding to the maps in tools

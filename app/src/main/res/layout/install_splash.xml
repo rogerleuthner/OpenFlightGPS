@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+		<!-- TODO not great that this string is encoded here too; create this field dynamically
+		  - so that the define for the string can be shared ?? 
+		 -->
+	<TextView android:text="Scroll to the bottom and read the information below and then type 'I agree' if you agree to the EULA as described:"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+		android:textSize="@dimen/font_size_big"/>
+
+	<EditText android:id="@+id/edit_beta_password"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:hint="do you agree?"
+		android:textColor="#900"
+		android:gravity="center_horizontal" android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp" android:singleLine="true"/>
+
+	<TextView android:text="@string/beta_text" android:id="@+id/label_beta_text"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:autoLink="email" android:layout_margin="10dp" android:textSize="@dimen/font_size_small"
+		android:scrollbars="vertical" android:maxLines="20" android:scrollbarStyle="insideOverlay" />
+ 
+</LinearLayout>

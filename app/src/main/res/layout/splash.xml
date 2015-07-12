@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    android:duplicateParentState="false"
+    android:focusable="false"
+    android:longClickable="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbars="vertical|none" >
+      
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="1">	
+	    
+	    <TableRow>
+			<TextView 
+				android:id="@+id/TextView01" 
+				android:padding="10dip" 
+				android:text="OpenFlightGPS"
+				android:textSize="@dimen/font_size_title"
+				android:layout_span="2"
+				android:textColor="#008080"
+				android:textStyle="bold"
+				android:shadowDx="1.2"
+				android:shadowDy="1.2"
+				android:shadowRadius="1.2"
+				android:shadowColor="#000000"				
+				/>	  
+		</TableRow>  		    
+		
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Version:"
+		  		android:textSize="@dimen/font_size_medium"
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+
+		  	<TextView
+		  	    android:id="@+id/splashVersion"
+		  	    android:layout_span="1"
+		  	    android:gravity="left"
+		  	    android:padding="3dip"
+		  	    android:text="Free"
+		  	    android:textColor="#ffffff"
+		  	    android:textSize="@dimen/font_size_medium" />
+						
+		</TableRow>	
+		
+		<TableRow >  
+		  	<TextView android:text="Expires:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#008080"
+				android:layout_span="1"/>
+
+		  	<TextView
+		  	    android:id="@+id/splashExpires"
+		  	    android:layout_span="1"
+		  	    android:gravity="left"
+		  	    android:padding="3dip"
+		  	    android:text="No"
+		  	    android:textColor="#008080"
+		  	    android:textSize="@dimen/font_size_medium" />
+						
+		</TableRow>			
+
+		<TableRow android:background="#008080">  
+		  	<TextView android:text="Software Revision:"
+		  		android:textSize="@dimen/font_size_medium"		  	
+		  		android:gravity="right"
+				android:padding="10dip"
+				android:textColor="#ffffff"
+				android:layout_span="1"/>
+
+		  	<TextView
+		  	    android:id="@+id/splashRevision"
+		  	    android:layout_span="1"
+		  	    android:gravity="left"
+		  	    android:padding="3dip"
+		  	    android:text="21.5"
+		  	    android:textColor="#ffffff"
+		  	    android:textSize="@dimen/font_size_medium" />
+						
+		</TableRow>			
+
+		
+		<TableRow>
+
+			<TextView
+			    android:id="@+id/TextView02"
+			    android:layout_span="2"
+			    android:height="100dp"
+			    android:padding="10dip"
+			    android:text="NOT an official product.  Consult an official product for all Aeronautical Decision Making!"
+			    android:textColor="#f00"
+			    android:textSize="@dimen/font_size_medium" />
+
+		</TableRow>
+				
+		<TableRow>
+
+			<ImageView
+			    android:id="@+id/SplashImageView"
+			    android:layout_span="2"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/f20" />
+
+		</TableRow>
+	  	<!-- 
+		Not animated
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/SplashImageView"
+			android:src="@drawable/lnxins"
+			android:layout_gravity="center"		
+			>
+		</ImageView>
+	-->  
+		
+	</TableLayout>
+</ScrollView>

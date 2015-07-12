@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>Open Flight View</title>
+			<link type="text/css" href="main.css" rel="stylesheet" />
+		</meta>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<a href="file:///android_asset/manual/perms.html"> Permissions/Security</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="file:///android_asset/manual/credits.html"> Credits</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="file:///android_asset/manual/releasenotes.html"> Release Notes</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="file:///android_asset/manual/eula.html"> End Use License Agreement</a>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+
+
+			<tr>
+				<td align="left" width="10">
+					<img width="10" height="1" alt="" src="../skin/images/spacer.gif"
+						class="spacer" />
+				</td>
+				<td align="left" width="100%">
+					<div class="content">
+						<table class="title">
+							<tr>
+								<td valign="middle">
+									<h1>OpenFlightGPS User Guide</h1>
+								</td>
+							</tr>
+						</table>
+
+						<a name="init" />
+						<a name="Essentials" />
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td height="10" width="9" />
+									<td>
+										<h3>Essential Notes</h3>
+									</td>
+									<td />
+								</tr>
+								<tr>
+									<td class="bottom-left-thick" />
+									<td bgcolor="#008080" />
+									<td class="bottom-right-thick" />
+								</tr>
+							</tbody>
+						</table>
+						<div class="section">
+							<p>
+								Essential usage notes for OpenFlightGPS.
+</p>
+
+							<ul>
+								<li>Switch between "Products" (such as WACs and Sectionals) by
+									using either menu item or east/west "fling" gesture.</li>
+								<li>Delete maps by opening them up and then choosing the "Delete
+									Map" menuitem.</li>
+								<li>Don't use the Android "Back" button while downloading a map,
+									use the home key so the download proceeds in the background.</li>
+								<li>OpenFlightGPS "Product maps" load times correspond to the
+									number of downloaded maps.</li>
+								<li>When GPS is active, ownship icon and position data box 
+									will not appear until a fix is obtained.
+								</li>
+								<li>
+									When in "Compass" mode, the ownship points in the direction
+									<strong>on the map</strong>
+									that the device is pointed.
+								</li>
+								<li>When in "GPS" mode, the ownship will appear as a house
+									(home) icon unless movement is detected, in which case
+									it will shift to an aircraft with a direction of movement
+									indicator.</li>
+							</ul>
+
+							<div class="frame note">
+								<div class="label">Note - limited editions</div>
+								<div class="content">
+
+										Limited or free editions of OpenFlightGPS limit the number of
+										simultaneous maps accessible by the program.
+										You will be allowed to download 1 map more than your version is
+										licensed for, but the number of maps
+										in the download directory will then exceed the number allowed by
+										the edition,
+										and the program will shut off the GPS features and refuse to
+										download other maps. In this case, either delete
+										maps (see above instructions for how to do this) or upgrade to a 
+										different version of the program.  		
+										<br></br>
+										Removing/uninstalling the program will NOT delete the map cache, but
+										it will reset all preferences you may have set.
+								</div>
+							</div>
+
+						</div>
+
+						<a name="N1000C" />
+						<a name="About+and+Limitations" />
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td height="10" width="9" />
+									<td>
+										<h3>About and Limitations</h3>
+									</td>
+									<td />
+								</tr>
+								<tr>
+									<td class="bottom-left-thick" />
+									<td bgcolor="#008080" />
+									<td class="bottom-right-thick" />
+								</tr>
+							</tbody>
+						</table>
+
+
+						<!-- ================================================================================== -->
+
+
+
+
+
+
+<div class="section">
+			
+			
+<p>
+				OpenFlightGPS is an Android application developed to allow offline
+				georeferenced
+				viewing of
+				various FAA products. The products are
+				minimally processed in order to work
+				with
+				OpenFlightGPS. Therefore,
+				the maps are NOT OFFICIAL INFORMATION SOURCES. ALWAYS
+				consult
+				official sources for aeronautical decision making. OPENFLIGHTGPS is
+				NOT
+				INTENDED for in-flight
+				navigation use; your use of OpenFlightGPS
+				constitutes acceptance of these
+				terms.
+		</p>
+			
+<div class="frame note">
+<div class="label">Note</div>
+<div class="content">Many cellphone GPS chips, and some tablet GPS chips, are not very
+				accurate and may take a long
+				time and a clear sky to get a GPS 'fix'.
+				So-called aGPS (GPS assisted by
+				cell tower position) may not
+				be
+				available in your location, or if you are operating without cell
+				service, so OpenFlightGPS may seem
+				to perform more poorly than other
+				GPS applications. This is
+				only a function of the hardware GPS,
+				and not the OpenFlightGPS software.
+		</div>
+</div>
+			
+<p>
+				OpenFlightGPS works on Android-powered devices, including cell
+				phones and most
+				tablets. We suggest that
+				maps only be downloaded when
+				the user is connected to the internet via
+				WIFI, but 3G can be used
+				in
+				a pinch, as the individual maps are between 2 megabytes all the way
+				to almost 20 megabytes, depending
+				upon the particular product (such
+				as Low Enroute, Sectional, WAC). Users
+				may download individual
+				maps as
+				per the terms of their licensed version. The maker of
+				OpenFlightGPS
+				is NOT responsible for
+				data charges you may incur from your cellular
+				provider in downloading
+				maps.
+				If you wish to purchase maps in bulk format (DVD/MicroSD or similar),
+				please contact us for minimal
+				fee products we will send
+				you.
+		</p>
+			
+<p>
+				OpenFlightGPS is developed on the open source Android system
+				because we
+				believe that vendor-lock-in endemic to some other
+				solutions is not in the
+				best
+				interests of pilots. The FAA provides the
+				digital base products for FREE, so
+				we believe converting these products to a proprietary
+				format and distributing them should be done 
+				at a low cost.
+		</p>
+ 
+			
+<div class="frame note">
+<div class="label">Note</div>
+<div class="content">You may notice some geographical distortion on various maps.
+				This is due to the projection
+				of the worlds (spherical) surface onto
+				a flat map. This distortion is
+				not seen on the printed paper
+				copies
+				because the paper copies do not preserve the georeferencing
+				information that is encoded in the
+				digital product as distributed by
+				the FAA. The maps, while being converted
+				to tiles, have
+				georeference
+				information preserved in order to provide the GPS features of
+				OpenFlightGPS.
+		</div>
+</div>
+		
+</div>
+		
+<a name="N10022"></a><a name="How+to+use+it"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>How to use it</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>The main features of OpenFlightGPS are the GeoReferenced (moving
+				map) Products</p>
+ 
+			
+<ul>
+ 
+				
+<li>
+					VFR Sectional
+					<strong>Chart Chooser</strong>
+				
+</li>
+ 
+				
+<li>
+					WAC
+					<strong>Chart Chooser</strong>
+				
+</li>
+ 
+				
+<li>
+					Terminal Area (Chart)
+					<strong>Chart Chooser</strong>
+				
+</li>
+				
+				
+<li>
+					IFR Low
+					<strong>Chart Chooser</strong>
+				
+</li>				
+ 
+			
+</ul>
+ 
+			
+<p>And the NON GeoReferenced Products</p>
+ 
+			
+<ul>
+ 
+				
+<li>
+					Terminal Area (Flyway)
+					<strong>Chart Chooser</strong>
+				
+</li>
+ 
+			
+</ul>
+ 
+			
+<p>
+			Each of which are presented in the
+			<strong>Map Navigator</strong>
+			as scrollable, zoomable maps.
+			</p>
+			
+			
+<p>Supporting features are:</p>
+ 
+			
+<ul>
+ 
+				
+<li>Simple Courses/Waypoints</li>
+ 
+				
+<li>User Preferences</li>
+ 
+				
+<li>Message Display</li>
+ 
+				
+<li>Map Management - delete, download, force download</li>
+ 
+				
+<li>Map Compass</li>
+ 
+				
+<li>Map Scale</li>
+ 
+			
+</ul>
+		
+</div>
+		
+<a name="N10071"></a><a name="Map+Navigator+GPS+Modes"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Map Navigator GPS Modes</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>
+				OpenFlightGPS can show ownship position oriented in the direction
+				of GPS
+				movement, and gradually
+				scroll the map to keep the ownship
+				centered in the the view (moving map).
+				Another option is to have the
+				ownship
+				display coupled to the 'compass' mode, so that the ownship
+				will point in
+				the direction on the map that the
+				Android device itself
+				is pointed.
+			</p>
+			
+<p>
+				OpenFlightGPS also displays a scale in the upper left corner of
+				the screen in
+				order to allow the user to estimate
+				distances at any
+				map zoom level. To the right side of the scale, the GPS
+				coordinates
+				in Latitude, Longitude and
+				altitude (feet) appear when the unit has
+				a GPS lock (coordinates will not
+				display without GPS lock).
+			</p>
+			
+<p>
+				When the hardware gets a GPS lock, the ownship will automatically
+				appear with a 'centerline' extended showing
+				the GPS-computed
+				heading, or the compass heading depending upon the
+				mode selected
+				(see below). If there is no
+				GPS lock, the ownship will not appear.
+				If not in compass mode, and a
+				GPS lock is obtained but no motion is
+				detected,
+				the ownship will change to a 'house' icon.
+			</p>
+ 
+			
+<a name="N10080"></a><a name="Compass%2FGPS+Mode"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Compass/GPS Mode</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					Compass appears in upper left corner.
+					After GPS acquires
+					position: ownship 'aircraft' icon appears at your
+					location and
+					points in direction on the map that device is
+					pointed.
+					Position and
+					altitude coordinates appear in the center or upper right hand
+					corner.
+			</p>
+<p>
+					"Reset Map" will center ownship in display. 			
+			</p>
+ 
+			
+<a name="N1008D"></a><a name="GPS+%28no+compass%29+Mode"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>GPS (no compass) Mode</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					Compass does not appear. After GPS acquires position:
+					if motion
+					is detected by the GPS, ownship 'aircraft' icon
+					appears at your
+					current location and points in the direction
+					on the map of the
+					motion. If no motion is detected, ownship
+					will change to a 'house'
+					at your current location.
+					Position and altitude coordinates appear
+					in the upper right hand corner.
+			</p>
+<p>
+					"Reset Map" will center ownship in display. 			
+			</p>
+ 
+			
+<a name="N1009A"></a><a name="GPS+Off"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>GPS Off</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					Neither compass, ownship nor position and altitude coordinates
+					will
+					appear on
+					the screen.  
+			</p>
+<p>
+					"Reset Map" will position the map at the approximate center of
+					the
+					physical map that is currently open.
+			</p>
+		
+</div>
+		
+		
+ 
+		
+		
+		
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		
+<a name="N100A8"></a><a name="Courses+and+Waypoints"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Courses and Waypoints</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>
+				Simple, visual waypoints may be created anywhere on any of the Geo Referenced charts.  The waypoints are
+				sequential, and we don't currently provide a way to reorder the points, so points must be deleted
+				in order to insert intermediate points.
+			</p>
+			
+<p>
+				A course is a series of waypoints that may be saved or loaded as a unit.  Course lines are drawn between
+				the sequential waypoints.  A course may be given a name.  Courses saved with an existing name will REPLACE
+				the prior course of the same name.
+			</p>
+			
+<p>
+				A companion feature to Courses and Waypoints is the ability to scroll the current chart "off the edge", and
+				if the user has previously downloaded the immediate adjacent chart, that adjacent chart will be opened and
+				the previous chart closed.  This allows courses to span individual charts.
+			</p> 
+			
+<p>
+				Note that the course being viewed will persist through chart and/or product changes, and as such you can
+				create a Course for example on an IFR Enroute Chart utilizing airways, then open up the VFR Sectional chart
+				and see how the course appears on the Sectional.  Similarly, a course may be created on a WAC chart, then
+				the course viewed in higher detail on the VFR Chart (or of course the IFR Low or even the TAC if applicable). 
+			</p>
+			
+<p>
+				Note that the Course will not automatically be saved.  In order to persist any changes you have made to the 
+				course or the waypoints, you must select the "Courses/Waypoints-|Save Course" menu item from the Android 
+				menu (when a chart is open).
+			</p>
+ 
+			
+			
+<a name="N100BD"></a><a name="Waypoint+Information"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Waypoint Information</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+				Useful information is generated and viewable about the waypoints by OpenFlightGPS, for example:
+				</p>
+<ul>
+					
+<li>Latitude and longitude of the waypoint.</li>
+					
+<li>Total length in Nautical Miles of the course the waypoint is a part of.</li>
+				
+</ul>
+<a name="N100CF"></a><a name="If+waypoint+is+not+the+%22end+point%22+of+a+course"></a>
+<h4>If waypoint is not the "end point" of a course</h4>
+<ul>
+						
+<li>Distance waypoint-to-waypoint (Nautical Miles).</li>
+						
+<li>Bearing waypoint-to-waypoint (TRUE).</li>
+						
+<li>Distance to the next waypoint (Nautical Miles).</li>
+						
+<li>Bearing to the next waypoint (TRUE).</li>
+					
+</ul>
+<a name="N100E5"></a><a name="If+GPS+fix+for+current+location+is+available"></a>
+<h4>If GPS fix for current location is available</h4>
+<ul>
+						
+<li>Distance in Nautical Miles to the waypoint.</li>
+						
+<li>Bearing (TRUE) to the waypoint.</li>
+					
+</ul>
+ 			
+			
+<a name="N100F6"></a><a name="Creating+Waypoints"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Creating Waypoints</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					To create a waypoint, merely "long press" on any area of the screen.  The waypoint will appear
+					at that spot.  Continue to add waypoints by performing a "long press" at each successive waypoint.
+					Note that the waypoints are sequential, and there is currently no way to re-order the points.
+				</p>
+<p>
+					Waypoints may be deleted by "touch" or quick press on the waypoint, which will cause a context menu
+					to appear.  To delete, select the "Delete" item from that context menu.
+				</p>
+ 
+			
+<a name="N10103"></a><a name="Editing+Waypoints%2FViewing+Waypoint+Details"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Editing Waypoints/Viewing Waypoint Details</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					A title/name may be added to each waypoint along with descriptive text or notes.  To edit these details,
+					"touch" the waypoint and select "Edit" from the context menu that appears.  A separate screen will appear
+					that contains editable fields for the "Title/Name" and "Description/Notes".  This screen also displays the
+					non-editable waypoint and course details.  Merely choose the Android 'back' key to save your changes to the
+					waypoint - HOWEVER, note that such changes are NOT saved to the course until you manually choose the "Save Course"
+					menu via: "Android menu key-|Courses/Waypoints-|"Save Course".  
+				</p>
+ 
+			
+		
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		
+<a name="N1010E"></a><a name="Chart+Chooser"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Chart Chooser</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>
+				When OpenFlightGPS is started up, you will be presented with a
+				Chart
+				Chooser of your "home map".
+				This is a user selectable home map.
+				As shipped, the "VFR Sectional"
+				chooser is set as the home map.
+				Change the home map by selecting the Android "menu" key, selecting
+				the
+				"Preferences" tab, and going to
+				"Home Map". Select the home map
+				that you want to come up by default;
+				close the preferences by using
+				the device backbutton.
+		</p>
+			
+<p>
+				You can change the current Chart Chooser at any time by selecting
+				the
+				Android "menu" key, then
+				selecting "Products" item, and then
+				choosing the Chart Chooser you want.
+		</p>
+			
+<p>
+				Use a Chart Chooser by finger-pressing on the area chart you wish
+				to
+				view - the charts that are available
+				(have been previously
+				downloaded to your device) are
+				outlined in green, and will flash red
+				when selected. When you release the
+				press, you may be presented
+				with
+				a context menu that allows a subselection, for example for "North"
+				or "South" of the area.
+		</p>
+			
+<p>
+				The Chart Chooser presents a geographic area (United States) with
+				"hot" areas that correspond to
+				charts available for that area. Each
+				of the chart sections (such as VFR
+				sectional 'Albuquerque')
+				appear as
+				either a red 'X', a green slash ('/'), or a green outline. The
+				red
+				'X' means neither of the
+				portions (in this case, 'North' and
+				'South') are currently downloaded on
+				your device. A green slash '/'
+				means that one of the portions (either 'North' or 'South') are
+				present
+				on your device. A green outline
+				means the both portions are
+				currently on your device.
+		</p>
+			
+<p>
+				Either way, finger press the 'X', '/' or outline and you will be
+				presented with a 'North'/'South' dialog.
+				Choose which chart you are
+				interested in and if the chart is not on the
+				device you will be
+				prompted to
+				download it; otherwise, the Map Navigator will come up
+				with your map in the
+				center. If you do download
+				a chart, the Chart
+				Chooser will automatically update it's symbol
+				('X', '/', outline).
+		</p>
+			
+<p>
+				You can cancel a selection by sliding your finger (before lifting
+				your
+				finger from the device screen)
+				to a non-outlined area on the
+				Chart Chooser and then lifting your
+				finger.
+		</p>
+			
+<p>
+				Downloaded maps will persist until you delete them or overwrite
+				them with a
+				new version. They will persist
+				through uninstall of the
+				program. If you wish to manually delete the maps,
+				first find out the
+				location on
+				your device by going to the Android 'menu' key and
+				selecting the
+				'Preferences' menu item. The preferences item
+				'Data
+				Directory' is the file path on your device to the charts. Each
+				distinct chart is contained within a '.zip'
+				file found in the data
+				directory. You may use a file manager
+				application to delete or move
+				the zip files.
+		</p>
+		
+</div>
+		
+<a name="N1012A"></a><a name="Message+Display"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Message Display</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>
+				The Message Display will show your currently selected map in the
+				Android Notification Bar at the top
+				of the screen, or "Cancelling
+				..." if you cancel your selection.
+		</p>
+		
+</div>
+		
+<a name="N10134"></a><a name="Map+Navigator"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Map Navigator</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<p>
+				The Map Navigator is used scrolled simply by sliding your finger
+				on
+				the map. You may zoom the map
+				either by using a two-finger "pinch"
+				or "expand" gesture, or you may use
+				the zoom buttons that appear
+				at
+				the bottom of the screen when you touch the map.
+		</p>
+			
+<p>
+				If you find that you have "lost" your map by scrolling it off the
+				view, you may recenter the map by
+				opening the Android menu items
+				(press Android menu key, menu items appear
+				on the bottom of the
+				screen)
+				called 'Reset View' that will perform the same (approximate)
+				recenter of
+				the map in the view.
+		</p>
+			
+<p>
+				The Map Navigator will display your current position ("ownship")
+				as
+				either a miniature airplane or as
+				a 'house' symbol, depending upon
+				your movement and the settings (see
+				preferences section below). The
+				Map
+				Navigator may also display a scale bar, a magnetic compass face,
+				and your
+				location in Latitude/Longitude and Altitude,
+				again depending
+				upon the preferences you have set.
+		</p>
+		
+</div>
+ 
+		
+<a name="N10144"></a><a name="Preferences"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Preferences</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+ 
+			
+<a name="N1014A"></a><a name="Map+Navigator+Menus%2FPreferences"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Map Navigator Menus/Preferences</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>While the Map Navigator is running, touch the Android "menu" key
+					to bring up the following option menus: 
+			</p>
+<a name="N10153"></a><a name="Chart+Chooser-N10153"></a>
+<h4>Chart Chooser</h4>
+<p>
+						Go directly back to the Chart Chooser.
+				</p>
+<a name="N1015D"></a><a name="Force+Map+Download"></a>
+<h4>Force Map Download</h4>
+<p>
+						Redownload the current map.
+				</p>
+<a name="N10167"></a><a name="Reset+View"></a>
+<h4>Reset View</h4>
+<p>
+						Reset the view to either the physical map center, or centered
+						upon the
+						ownship.
+				</p>
+<a name="N10171"></a><a name="Delete+Map"></a>
+<h4>Delete Map</h4>
+<p>
+						Remove the current map from the cache directory. After the map
+						is then
+						closed, it will
+						no longer be available through the Chart
+						Chooser. This action will
+						decrement the downloaded
+						map count,
+						freeing up for a new download.
+				</p>
+<a name="N1017B"></a><a name="Preferences-N1017B"></a>
+<h4>Preferences</h4>
+<p>
+						The following preferences may be set:
+				</p>
+<ul>
+						
+<li>Screen On in Flight - don't time out the screen</li>
+						
+<li>Ownship Centered - toggle to move map to keep ownship at
+							center of display. Enables "moving map"
+							functionality to keep
+							ownship at center of display, causing the map to scroll
+							with your
+							movement. Note
+							that repositioning the map by a manual scroll
+							(finger swipe), or
+							changing the zoom level cancels this function.
+							To reinitiate after such a manual map activity, choose the "Keep
+							Map Centered" menu item again.</li>
+						
+<li>Compass Enabled - toggle to show compass; also orients
+							ownship to device direction</li>
+					
+</ul>
+			
+			
+<a name="N10192"></a><a name="Chart+Chooser+Menus%2FPreferences"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Chart Chooser Menus/Preferences</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>While the Chart Chooser is running, touch the Android "menu" key
+					to bring up the following option menus: 
+			</p>
+<a name="N1019B"></a><a name="About"></a>
+<h4>About</h4>
+<p>
+						Show the licensing, version and map statistics.
+				</p>
+<a name="N101A5"></a><a name="Docs"></a>
+<h4>Docs</h4>
+<p>
+						Offline users guide.
+				</p>
+<a name="N101AF"></a><a name="Preferences-N101AF"></a>
+<h4>Preferences</h4>
+<p>Scroll to the preference you wish to change, and make your
+						changes. The changes will be automatically
+						change when you
+						backbutton out of the preferences screen"
+				</p>
+<ul>
+						
+<li>
+							Home Chart - set the chart type you wish to see first when
+							starting
+							OpenFlight Map.
+				</li>
+						
+<li>
+							Data Directory - this is the location where OpenFlightGPS
+							looks for
+							and downloads to it's map files.
+							Only change this if you
+							are sure you know what you are doing - you
+							can easily change this
+							and 'lose' your
+							already downloaded maps, or change it to a
+							directory that OpenFlightGPS
+							does not have write privileges on
+							so
+							problems will arise. If your device is low on space, you can
+							change this to a something like an SD card
+							directory.
+				</li>
+						
+<li>
+							Screen on in flight - keep the screen from timing out. Note
+							that you
+							can burn significant battery by
+							keeping the screen on too
+							long. OpenFlightGPS will remain at the point
+							at which you left it
+							if you
+							allow the screen to shut off - and you can just reactivate
+							the screen
+							(usually by a quick power button
+							press) to get back to
+							your map.
+				</li>
+					
+</ul>
+<a name="N101C5"></a><a name="Products"></a>
+<h4>Products</h4>
+<p>Select the Chart Chooser you wish to use:
+				</p>
+<ul>
+						
+<li>Sectional</li>
+ 
+						
+<li>World Area</li>
+ 
+						
+<li>EnRoute Low</li>
+ 
+						
+<li>Terminal Area Flyway</li>
+ 
+						
+<li>Terminal Area Chart</li>
+					
+</ul>
+<a name="N101E1"></a><a name="My+Location"></a>
+<h4>My Location</h4>
+<p>If GPS position is already acquired and the map corresponding
+						to your current
+						position exists on the device (has already been
+						downloaded), that map
+						will open
+						and your current position will be
+						centered. 			
+				</p>
+ 
+		
+</div> <!-- preferences -->
+ 
+		
+<a name="N101EF"></a><a name="How+to+update+it"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>How to update it</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+			
+<a name="N101F5"></a><a name="Over+the+air+%28OTA%2FWIFI%29"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Over the air (OTA/WIFI)</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					Download maps by first connecting your Android device to a WIFI
+					network -
+					the maps are large, and
+					distributing them OTA would be very
+					time consuming - although it will work in a
+					pinch. After you
+					have
+					connected your device to your wifi network, open the OpenFlightGPS
+					application as you normally
+					would, go to your desired Chart Chooser,
+					and select the chart that you
+					want to download. If the chart
+					is found
+					to be non-existant or out-of-date on your device, you will
+					be
+					presented with a screen that
+					will allow you to download the map. You
+					may open other applications on
+					your phone while the download
+					is
+					proceeding, but don't "backbutton" out of OpenFlightGPS or the
+					download will be cancelled.
+		</p>
+<p>
+					You may force the redownload of a map that the device thinks you
+					already have by going to that map,
+					selecting the Android 'menu'
+					button, then choosing the 'Force Download' menu
+					item.
+		</p>
+ 
+			
+<a name="N10202"></a><a name="Manually+download+and+install"></a>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h4>Manually download and install</h4>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left"></td><td bgcolor="#008080"></td><td class="bottom-right"></td>
+</tr>
+</tbody>
+</table>
+<p>
+					If you know your way around your device, you may download the
+					maps
+					manually, and install them
+					on your device. Contact us at
+					'openflightmap&lt;at&gt;gmail.com' if
+					you would like to purchase
+					entire map sets either on DVD/CD or Micro-SD.
+		</p>
+		
+</div> <!-- how to update -->
+ 
+		
+<a name="N1020F"></a><a name="Future"></a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="10" width="9"></td><td>
+<h3>Future</h3>
+</td><td></td>
+</tr>
+<tr>
+<td class="bottom-left-thick"></td><td bgcolor="#008080"></td><td class="bottom-right-thick"></td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+			
+				
+<p>
+					Things we are working on:
+				</p>
+				
+<ul>
+					
+<li>Ability to reorder waypoints, and more easily move them around</li>
+				
+</ul>
+				
+<p>
+					Please let us know if there are other things you would like to
+					see in OpenFlightGPS.
+				</p>
+		
+</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- ================================================================================== -->
+
+
+				</td>
+				<td width="10">
+					<img width="10" height="1" alt="" src="../skin/images/spacer.gif"
+						class="spacer" />
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Roger -->
+
+<area shape="poly" coords="52,21,36,69,108,83,116,35" href="CF-16" />
+<area shape="poly" coords="133,38,127,86,198,88,197,40" href="CF-17" />
+<area shape="poly" coords="33,86,21,129,70,141,78,97" href="CG-18" />
+<area shape="poly" coords="114,102,108,140,158,146,159,106" href="CG-19" />
+<area shape="poly" coords="215,46,218,87,288,78,280,39" href="CF-18" />
+<area shape="poly" coords="298,35,307,74,376,55,361,15" href="CF-19" />
+<area shape="poly" coords="177,107,177,146,244,143,240,104" href="CG-20" />
+<area shape="poly" coords="258,102,264,141,332,129,322,90" href="CG-21" />
+<area shape="poly" coords="41,148,32,187,94,201,100,159" href="CH-22" />
+<area shape="poly" coords="119,161,113,201,176,205,175,165" href="CH-23" />
+<area shape="poly" coords="195,165,196,205,257,201,254,162" href="CH-24" />
+<area shape="poly" coords="272,160,277,199,339,188,329,149" href="CH-25" />
+<area shape="poly" coords="279,218,285,259,354,246,343,206" href="CJ-26" />
+<area shape="poly" coords="361,202,373,241,440,220,425,181" href="CJ-27" />
+
+</map>
+

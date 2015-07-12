@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="General settings">
+
+		<ListPreference android:key="home_screen"
+			android:title="Startup Screen" android:defaultValue="Sectional"
+			android:entries="@array/home_screen_enum_names" android:entryValues="@array/home_screen_enum_names" />
+
+		<com.cso.and.of.config.EditTextPreferenceWithValue
+			android:key="data_directory" android:title="Data Directory"
+			android:summary="Where maps/data are downloaded to/looked for" 
+			android:singleLine="true" />	
+			
+		<CheckBoxPreference android:key="force_screen_on"
+			android:title="Screen on in flight" android:defaultValue="false"
+			android:summary="Keeps the display from going to sleep" />			
+
+		<CheckBoxPreference android:key="select_map_by_position"
+			android:title="Select map by GPS" android:defaultValue="false"
+			android:summary="Bring up the chart based upon current GPS position" />		
+			
+		<CheckBoxPreference android:key="ownship_centered"
+			android:title="Ownship centered" android:defaultValue="true"
+			android:summary="Move chart to keep ownship center of display (Moving map)" />	
+			
+					
+		<com.cso.and.of.config.CheckBoxPreferenceLongSummary
+			android:key="compass_enabled" android:title="Compass Enabled"
+			android:summary="@string/compass_enabled_summary"
+			android:defaultValue="false"/>
+			
+		<CheckBoxPreference android:key="use_gps"
+			android:title="Use GPS" android:defaultValue="true"
+			android:summary="Enable GPS features" />					
+
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory android:title="Internal Tools">
+		<PreferenceScreen android:key="advanced"
+			android:title="Advanced" android:summary="Options for advanced users">
+			
+			<com.cso.and.of.config.EditTextPreferenceWithValue
+				android:key="gps_update_interval_secs" android:title="GPS Update Interval (MILLIseconds)"
+				android:summary="Too small an update interval will drain battery.  Set to 0 to do as small as device supports."
+				android:numeric="integer"
+				android:defaultValue="10000"/>			
+
+			<com.cso.and.of.config.EditTextPreferenceWithValue
+				android:key="gps_update_dist_meters" android:title="GPS Update Distance (meters)"
+				android:summary="Too small an update distance will drain battery.  Set to 0 to do as small as device supports."
+				android:numeric="integer|decimal"
+				android:defaultValue="10.0"/>
+<!-- 
+			<CheckBoxPreference
+				android:key="compass_enabled" android:title="Compass Enabled"
+				android:summary="Show compass when 'My Location' is enabled"
+				android:defaultValue="false"/>				
+			
+			<CheckBoxPreference android:key="use_dummy_gps_coords"
+				android:title="Use Dummy Coords" 
+				android:summary="Dummy GPS coords location for testing" 
+				android:defaultValue="false"/>				
+			
+			<com.cso.and.of.config.EditTextPreferenceWithValue
+				android:key="dummy_gps_latitude" android:title="GPS Latitude"
+				android:summary="GPS Latitude to fake when using dummy coords"
+				android:numeric="integer|decimal"
+				android:defaultValue="35.0"/>
+
+			<com.cso.and.of.config.EditTextPreferenceWithValue
+				android:key="dummy_gps_longitude" android:title="GPS Longitude"
+				android:summary="GPS Longitude to fake when using dummy coords"
+				android:numeric="integer|decimal"
+				android:defaultValue="-107.0" />
+ -->
+		</PreferenceScreen>	
+	</PreferenceCategory>
+	
+</PreferenceScreen>
+

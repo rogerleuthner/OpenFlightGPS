@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<resources>
+<!-- TODO take screen size into account for text sizes -->
+<!-- http://www.andrada-dev.org/android-sdk-mac_x86/platforms/android-Honeycomb/data/res/values/styles.xml -->
+	
+	<style name="ActionBar" parent="@android:style/Theme.Holo">
+		<item name="android:actionBarStyle">@style/OFTheme.ActionBarStyle</item>
+	</style>
+	
+	<style name="OFTheme.ActionBarStyle" parent="android:style/Widget.Holo.ActionBar">
+		<item name="android:titleTextStyle">@style/OFTheme.ActionBar.TitleTextStyle</item>
+		<!-- padding matches scalebaroverlay -->
+		<item name="android:paddingLeft">5dip</item>
+
+		<!-- re-enable this is can avoid painting the scalebar overlay 		 -->
+		<item name="android:background">#64008080</item>
+
+	</style>
+	
+	<style name="OFTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">#fff</item>
+		<item name="android:textSize">35dip</item>  <!-- match scale bar overlay for best appearance -->
+		<item name="android:gravity">center_horizontal</item>
+		
+	</style>
+ 
+</resources>

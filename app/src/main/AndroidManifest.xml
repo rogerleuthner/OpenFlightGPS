@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*******************************************************************************
+  ~  * OpenFlightGPS is Copyright 2009-2015 by Roger B. Leuthner
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  ~  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * Commercial Distribution License
+  ~  * If you would like to distribute OpenFlightGPS (or portions thereof) under a license other than
+  ~  * the "GNU General Public License, version 2", contact Roger B. Leuthner through GitHub.
+  ~  *
+  ~  * GNU Public License, version 2
+  ~  * All distribution of OpenFlightGPS must conform to the terms of the GNU Public License, version 2.
+  ~  ******************************************************************************/
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.cso.and.of.gps.FREE"
+      android:versionCode="23"
+      android:versionName="6">
+    <uses-sdk android:minSdkVersion="7" 
+              android:targetSdkVersion="12" />   
+
+    	<!--  android:hardwareAccelerated="true" breaks on xoom -->    	        
+    
+	<!-- Needed to get location (GPS, need cell tower loc) -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	
+	<!-- Needed to download maps -->
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	
+	<!-- needed to check the network for downloadability -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	
+	<!-- need this to set the wake lock during download -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />    	
+    	
+    <application android:icon="@drawable/openflight_icon"
+    	android:theme="@android:style/Theme.NoTitleBar" 
+    	android:name="com.cso.and.of.OpenFlight">
+
+		<activity android:name="com.cso.and.of.config.SplashActivity"
+				android:label="OpenFlightGPS"				
+				android:alwaysRetainTaskState="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity> 
+
+        <activity android:name="com.cso.and.of.ui.SelectMapActivity"
+				android:screenOrientation="landscape">  
+					<!-- android:alwaysRetainTaskState ensures activity stack is retained long term,
+					- so if user navigates to another app, the map being viewed will be retained until
+					- they turn it off -->
+        </activity>
+
+		<activity android:name="com.cso.and.of.config.Preferences">
+			<intent-filter>
+				<category android:name="android.intent.category.PREFERENCE" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="com.cso.and.of.config.PreferencesMap">
+			<intent-filter>
+				<category android:name="android.intent.category.PREFERENCE" />
+			</intent-filter>
+		</activity>		
+		
+		<!-- mechanics -->
+		<activity android:name="com.cso.and.of.config.DocActivity"/>
+		
+		<!-- waypoints -->
+		<activity android:name="com.cso.and.of.ui.WaypointInfoActivity"/>
+				
+		<!-- object viewers ; hack to remain in portrait until bugs fixed -->
+		<activity android:name="com.cso.and.of.ui.map.products.Sectional" android:configChanges="orientation"/> <!-- don't restart activity when orient changes -->
+		<activity android:name="com.cso.and.of.ui.map.products.WorldArea" android:configChanges="orientation"/>
+		<activity android:name="com.cso.and.of.ui.map.products.TerminalTac" android:configChanges="orientation"/>
+		<activity android:name="com.cso.and.of.ui.map.products.TerminalFly" android:configChanges="orientation"/>
+		<activity android:name="com.cso.and.of.ui.map.products.EnRouteLow" android:screenOrientation="landscape"/> <!-- ENR's may be land or port; don't allow reorient since we don't know for sure -->
+																													<!--  and default to landscape since most are that -->
+		<activity android:name="com.cso.and.of.ui.map.products.PDFView" android:screenOrientation="portrait"/>
+		<activity android:name="com.cso.and.of.ui.map.products.Plates" android:screenOrientation="portrait"/>		
+		<activity android:name="com.cso.and.of.ui.map.products.PlatesSelector" android:screenOrientation="portrait"/>	
+    </application>
+
+</manifest> 
