@@ -4,6 +4,7 @@ Moving map aeronautical charts based upon OSM Droid.  Charts may be downloaded f
 OpenFlightMap was one of the first Android aviation chart applications served from the Android Market (Play).  It was soon succeeded by OpenFlightGPS, which added moving map and waypoint capability to the application.  OpenFlightGPS (chart subscriptions) was sold on the Android market for 2 years before being superceded by much more capable offerings from the commercial vendors.  At that point the app was offered for free until the Google Terms became onerous, at which point I retired it from commercial distribution channels.
 
 Following is from the original Google Play description:
+
 Downloadable geo-referenced (moving map) aviation charts for the CONTIGUOUS 48 United States: Sectional, WAC, Enroute Low, Terminal Area; also includes non-geo-referenced VFR flyways charts.  Simple course lines are supported along with display of various data such as GPS latitude, longitude, speed, altitude, bearing, etc.
 
 OpenFlightGPS (then released in 2010 as "OpenFlight Map") was the FIRST Android Aviation Charting App available.  I created this app because there were no Android chart options at the time; and continue to service the app with FAA charts as provided on the FAA "aeronav" web site.  The charts are provided in their entirety, and as such are clearly marked with their effective dates and all other margin information.  You must download the charts one at a time as this app is provided to you at my personal expense and as such I would rather not have folks downloading 10 gigs at a pop from my website for charts they probably won't look at.
@@ -21,8 +22,6 @@ As per the license terms installing and using this application affirms that you 
 OpenFlight is a trademarked name, and is not part of the OpenFlightGPS application.
 
 Google is in the business of gathering and selling information about you.  Supporting Google by increasing the Android ecosystem with this free application is a necessary by-product of providing easy access to General Aviation pilots.
-
-## Screenshots
 
 # Build/run
 Originally developed in Eclipse/Android ADT, the current directory structure was created with Android Studio.
