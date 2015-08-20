@@ -23,6 +23,9 @@ OpenFlight is a trademarked name, and is not part of the OpenFlightGPS applicati
 
 Google is in the business of gathering and selling information about you.  Supporting Google by increasing the Android ecosystem with this free application is a necessary by-product of providing easy access to General Aviation pilots.
 
+## Pictures
+https://cloud.githubusercontent.com/assets/4997667/9386299/13143d6e-4718-11e5-9cfb-8f5a6fee4f7b.jpg
+
 # Build/run
 Originally developed in Eclipse/Android ADT, the current directory structure was created with Android Studio.
 
