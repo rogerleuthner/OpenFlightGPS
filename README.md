@@ -3,3 +3,6 @@ Moving map aeronautical charts based upon OSM Droid.  Charts may be downloaded f
 
 # Build/run
 Originally developed in Eclipse/Android ADT, the current directory structure was created with Android Studio.
+
+# Sample
+sample directory contains built .apk and two sample map packs
