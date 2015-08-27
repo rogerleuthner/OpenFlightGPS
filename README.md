@@ -32,4 +32,4 @@ Originally developed in Eclipse/Android ADT, the current directory structure was
 
 
 # Sample
-sample directory contains built .apk and two sample map packs
+Look in 'data' repository for pre-built .apk and a couple of sample map packs.
