@@ -5,9 +5,9 @@ OpenFlightMap was one of the first Android aviation chart applications served fr
 
 Downloadable geo-referenced (moving map) aviation charts for the CONTIGUOUS 48 United States: Sectional, WAC, Enroute Low, Terminal Area; also includes non-geo-referenced VFR flyways charts.  Simple course lines are supported along with display of various data such as GPS latitude, longitude, speed, altitude, bearing, etc.
 
-OpenFlightGPS (then released in 2010 as "OpenFlight Map") was the FIRST Android Aviation Charting App available.  I created this app because there were no Android chart options at the time; and continue to service the app with FAA charts as provided on the FAA "aeronav" web site.  The charts are provided in their entirety, and as such are clearly marked with their effective dates and all other margin information.  You must download the charts one at a time.
+OpenFlightGPS (then released in 2010 as "OpenFlight Map") was the first Android Aviation Charting App available on the Google android market.  The charts are provided in their entirety, and as such are clearly marked with their effective dates and all other margin information.  You must download the charts one at a time.
 
-This application is absolutely free and free of any advertising or other garbage*.  If OpenFlightGPS doesn't work for you or you don't like it for any reason, please delete it.
+This application is absolutely free and free of any advertising or tracking*.  If OpenFlightGPS doesn't work for you or you don't like it for any reason, please delete it.
 
 Works best on 10" tablets, also works with 7" and other form factor tablets and most cell phones - but many cell phones do not have good GPS reception without "cell tower" assist.
 
